@@ -75,15 +75,55 @@ button{
     display: none;
 }
 .imgMain{
-   
-    border-width:16px;
-    border-style: solid; 
-    border-image-source: url('./img/—Pngtree—bronzing\ pattern\ border_5638941.png');
+    display: flex;
+    margin: 20px;
+    /* margin-right: 80px; */
+    
+    /* border-width:16px; */
+    /* border-style: solid;  */
+    /* border-image-source: url('./img/—Pngtree—bronzing\ pattern\ border_5638941.png');
     border-image-slice:22%; 
     border-image-width:13%; */
 
 }
+.human{
+    box-sizing: border-box;
+    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/human.img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid rgb(16, 12, 12);
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+}
 
+.beast{
+
+    box-sizing: border-box;
+    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/beast.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid rgb(16, 12, 12);
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+}
+.elf{
+    box-sizing: border-box;
+    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/elf.img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid rgb(16, 12, 12);
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+}
+.undead{
+    box-sizing: border-box;
+    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/undead.img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid rgb(16, 12, 12);
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+}
 @media (max-width: 568px) {
     .navigationBorder {
         
@@ -109,6 +149,9 @@ button{
         background-color: rgb(12,10,20);
 
     }
+
+
+
    
     a{
         text-decoration: none !important;
@@ -120,5 +163,24 @@ button{
         font-size: larger;
         background-color: rgb(12,10,20) !important;
     }
+
+
+    .elf{
+        box-sizing: border-box;
+        background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/elf.img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 4px solid rgb(16, 12, 12);
+        box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+    }
+    .undead{
+        box-sizing: border-box;
+        background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/undead.img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 4px solid rgb(16, 12, 12);
+        box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+    }
+  
    
 }
