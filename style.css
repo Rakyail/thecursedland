@@ -81,17 +81,16 @@ button{
 .header{
     display: none;
 }
+
 .imgMain{
     display: flex;
-    margin: 20px;
-    /* margin-right: 80px; */
-    
-    /* border-width:16px; */
-    /* border-style: solid;  */
-    /* border-image-source: url('./img/—Pngtree—bronzing\ pattern\ border_5638941.png');
-    border-image-slice:22%; 
-    border-image-width:13%; */
+    margin: 10px;
+  
 
+}
+.h6{
+  align-items: center;
+  text-align:inherit;
 }
 .human{
     box-sizing: border-box;
@@ -100,7 +99,7 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
 }
 
 .beast{
@@ -111,7 +110,7 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
 }
 .elf{
     box-sizing: border-box;
@@ -120,22 +119,22 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
 }
 .undead{
     box-sizing: border-box;
     background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/undead.img.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -10;
     border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 14px 28px, #adfa15 0px 10px 10px;
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
 }
 
 .mainPageasaboutus .carousel-inner{
     width: 100%;
     border-radius: 26px /26px;
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #adfa15 0px 0px 20px;
+    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
 
    
 }
@@ -148,6 +147,19 @@ button{
     box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
 
 }
+
+/* CHARACTER DETAİL CSS */
+.h6{
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    text-wrap:pretty;
+
+}
+
+
+/* CHARACTER DETAİL CSS */
+
 @media (max-width: 568px) {
     .navigationBorder {
         
