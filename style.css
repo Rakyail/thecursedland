@@ -77,21 +77,19 @@ button{
 }
 /* navigation Border css end */
 
-/* MOBİLE NAVİGATİON CSS */
+/* MOBİLE NAVİGATİON CSS display */
 .header{
     display: none;
 }
-
+/* right Navigation image */
 .imgMain{
     display: flex;
     margin: 10px;
   
 
 }
-.h6{
-  align-items: center;
-  text-align:inherit;
-}
+/* CHARACTER DETAİL CSS*/
+
 .human{
     box-sizing: border-box;
     background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/human.img.png);
