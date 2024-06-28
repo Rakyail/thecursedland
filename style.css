@@ -156,6 +156,25 @@ button{
 }
 
 
+
+/* KİNGDOM MAP CSSS */
+.kingdomİmageCss img{
+    border: 3px solid wheat;
+    border-radius: 26px / 26px;
+    box-shadow: rgba(132, 136, 123, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
+
+}
+
+
+/* TEXT CSS  */
+.KingdomOverviev{
+    justify-content: center !important;
+    align-items: center !important;
+}
+/* TEXT CSS END */
+
+/* KİNGDON CSS END */
+
 /* CHARACTER DETAİL CSS */
 
 @media (max-width: 568px) {
