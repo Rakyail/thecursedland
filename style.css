@@ -248,6 +248,15 @@ button{
         border: 4px solid rgb(16, 12, 12);
         box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
     }
-  
-   
+   /* ABOUT GAME CSS ACCORDİON CSS MOBİLE */
+       .AboutGame{
+        width: 100%;
+       }
+
+      /* ABOUT GAME CSS ACCORDİON CSS MOBİLE ENF,D */
+
+    .iframe{
+        width:100% ;
+        height: 175px;
+    }
 }
