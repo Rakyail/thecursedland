@@ -188,7 +188,21 @@ iframe{
     border-image-source: url('./img/pngegg\ .png');
     border-image-slice: 155; /* Resmin dilimleme noktaları */
     border-image-width: 20px; /* Kenarlığın genişliği */
+    width: 100%;
+   
 
+}
+table{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.accordionDesktop{
+    justify-content: center;
+    align-items: center;
+    width: 900px;
 }
 .accordion-item{
     border: none;
@@ -313,7 +327,6 @@ iframe{
        padding: 8px;
      }
      .accordion-body{
-        width: 100% !important;
         display: flex;
         justify-content: center;
         padding-top: 10px;
