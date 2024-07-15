@@ -1,10 +1,8 @@
 body{
      background-color: rgb(12,10,20) !important;
      background-position: top;
-   
-   
-   
 }
+
 .navbar-expand{
     background-color: rgb(12,10,20);
 }
@@ -39,6 +37,11 @@ button{
     background: none;
     justify-content: flex-start;
     align-items: center;
+}
+
+/* NAVİGATİON HEADER (a)  */
+.navigation a{
+    color: black !important;
 }
 
 /* navigation Border css */
@@ -156,27 +159,35 @@ button{
 
 }
 
+.accordionMobile{
+    display: none;
+ }
 
 
 
 /* ABOUT GAME CSS */
 
-/* CHARACTER DETAİL CSS */
-
-
+iframe{
+    border-radius: 26px / 26px;
+    border-width:10px; /* Kenarlık kalınlığı */
+    border-style: solid; /* Kenarlık tipi */
+    border-image-source: url('./img/borderrrss.png');
+    border-image-slice: 95; /* Resmin dilimleme noktaları */
+    border-image-width: 20px; /* Kenarlığın genişliği */
+}
 
 
 .accordion-button{
     background-color: rgb(12,10,20) !important;
+    height: 60px;
     margin-top: 1rem;
     color: white ;
     box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 10px, #440563 0px 0px 10px;
-    border-width:2px; /* Kenarlık kalınlığı */
+    border-width:10px; /* Kenarlık kalınlığı */
     border-style: solid; /* Kenarlık tipi */
     border-image-source: url('./img/pngegg\ .png');
-    border-image-slice: 85; /* Resmin dilimleme noktaları */
-    border-image-width: 13px; /* Kenarlığın genişliği */
-    box-sizing: border-box; /* Padding'i kenarlık içine dahil et */
+    border-image-slice: 155; /* Resmin dilimleme noktaları */
+    border-image-width: 20px; /* Kenarlığın genişliği */
 
 }
 .accordion-item{
@@ -193,104 +204,189 @@ button{
     box-shadow: none;
 }
 
-
-@media (max-width: 568px) {
-    .navigationBorder {
-        
-        display:none;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header{
-        display: block;
-        
-
-    }
-    .mobileNavigation{
-        justify-content: center;
-        align-items: center;
-        display: flexbox;
-    }
-    .mainMenu{
-        border-radius: 16px / 16px!important;
-        border: 3px solid rgb(214, 60, 60) !important;
-        color:  white !important;
-        background-color: rgb(12,10,20);
-
-    }
-
-
-
-   
-    a{
-        text-decoration: none !important;
-        color: aliceblue !important;
-    }
-    .card{
-        font-family:'Times New Roman', Times, serif;
-        font-weight: 700;
-        font-size: larger;
-        background-color: rgb(12,10,20) !important;
-    }
-
-
-    .elf{
-        box-sizing: border-box;
-        background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/elf.img.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 4px solid rgb(16, 12, 12);
-        box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
-    }
-    .undead{
-        box-sizing: border-box;
-        background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/undead.img.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 4px solid rgb(16, 12, 12);
-        box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
-    }
-   /* ABOUT GAME CSS ACCORDİON CSS MOBİLE */
-       .AboutGame{
-        width: 100%;
-       }
-
-      /* ABOUT GAME CSS ACCORDİON CSS MOBİLE ENF,D */
-
-    .iframe{
-        width:100% ;
-        height: 175px;
-    }
-}
-
-
 @media (max-width: 768px) {
-     /* ABOUT GAME CSS ACCORDİON CSS MOBİLE */
-     .AboutGame{
+    /* ABOUT GAME CSS ACCORDION CSS MOBILE END */
+    .iframe {
         width: 100%;
-       }
-
-      /* ABOUT GAME CSS ACCORDİON CSS MOBİLE ENF,D */
-
-    .iframe{
-        width:100% ;
         height: 175px;
     }
-
-}
-
-@media (max-width: 968px) {
-    /* ABOUT GAME CSS ACCORDİON CSS MOBİLE */
-    .AboutGame{
+    .accordion{
        width: 100%;
+    }
+    .accordion{
+       width: 100%;
+    }
+    .TableDesktop{
+       display: none;
+    }
+ 
+    .accordionMobile{
+       display: block;
       }
-
-     /* ABOUT GAME CSS ACCORDİON CSS MOBİLE ENF,D */
-
-   .iframe{
-       width:100% ;
-       height: 175px;
+      table{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    table, th, td{
+       text-align: center;
+       padding: 8px;
+     }
+     
+   
+     
+ 
+ }
+ @media (max-width: 976px) {
+    /* ABOUT GAME CSS ACCORDION CSS MOBILE END */
+    .iframe {
+        width: 100%;
+        height: 235px;
+    }
+    .accordion{
+       width: 100%;
+    }
+    .accordion{
+       width: 100%;
+    }
+  
+    .TableDesktop{
+       display: none;
+    }
+ 
+    .accordionMobile{
+       display: block;
+      }
+      table{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    table, th, td {
+       border: 1px solid #ddd; /* Cell borders */
+       text-align: center;
+       padding: 8px;
+     }
+     
+     .accordion-body{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+     }
+    
+     
+ 
+ }
+ 
+ 
+ @media (max-width: 968px) {
+    /* ABOUT GAME CSS ACCORDION CSS MOBILE */
+    .AboutGame {
+       width: 100%;
+       
+    }
+    /* ABOUT GAME CSS ACCORDION CSS MOBILE END */
+    .iframe {
+       width: 100%;
+       height: 255px;
+    }
+    .accordion{
+       width: 100%;
+    }
+    .TableDesktop{
+       display: none;
+    }
+ 
+    .accordionMobile{
+       display: block;
+      }
+  
+      table{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    table, th, td {
+       border: 1px solid #ddd; /* Cell borders */
+       text-align: center;
+       padding: 8px;
+     }
+     .accordion-body{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+     }
+    
+ 
+ 
+     
+ }
+ 
+ /* BONUSES PAGE TABLE MOBİLE CSS */
+ @media (max-width: 600px) {
+    .TableDesktop{
+       display: none;
+    }
+    .accordion-body{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+     }
+    
+ 
+    .accordionMobile{
+       display: block;
+      }
+ 
+   .tableRow{
+    width: 100% !important;
    }
+   .border{
+    width: 100% !important;
+   }
+   table{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+  
+ }
+ @media (max-width: 660px) {
+    .TableDesktop{
+       display: none;
+    }
+ 
+    .accordionMobile{
+       display: block;
+      }
+ 
+   .tableRow{
+    width: 100% !important;
+   }
+   .border{
+    width: 100% !important;
+   }
+   .accordion{
+    width: 100%;
+ }
+ td{
+    padding: 5px;
+    margin: 100px;
+ }
+ table{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .accordion-body{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+ }
 
-}
+  
+ }
