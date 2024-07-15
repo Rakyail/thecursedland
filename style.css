@@ -246,9 +246,28 @@ table{
        text-align: center;
        padding: 8px;
      }
+     .navigationBorder{
+        display: none;
+     }
      
+     .header{
+        display: block;
+       
+     }
    
-     
+     button{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navigationDiv ul li a {
+        
+        color: white;
+        text-decoration: none;
+        background: none;
+        justify-content: flex-start;
+        align-items: center;
+    }
  
  }
  @media (max-width: 976px) {
@@ -289,6 +308,24 @@ table{
         padding-top: 4px;
      }
     
+     .header{
+        display: block;
+       
+     }
+     button{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navigationDiv ul li a {
+        
+        color: white;
+        text-decoration: none;
+        background: none;
+        justify-content: flex-start;
+        align-items: center;
+    }
+   
      
  
  }
@@ -332,8 +369,24 @@ table{
         padding-top: 10px;
      }
     
- 
- 
+     .header{
+        display: block;
+       
+     }
+   
+     button{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navigationDiv ul li a {
+        
+        color: white;
+        text-decoration: none;
+        background: none;
+        justify-content: flex-start;
+        align-items: center;
+    }
      
  }
  
@@ -401,5 +454,20 @@ table{
     padding-top: 10px;
  }
 
+ .header{
+    display: block;
+   
+ }
+
+.card{
+    background-color: rgb(12,10,20) !important;
+    text-decoration: none;
+   
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
   
  }
