@@ -1,6 +1,7 @@
 body{
      background-color: rgb(12,10,20) !important;
      background-position: top;
+     width: 100%;
 }
 
 .navbar-expand{
@@ -471,3 +472,4 @@ li,a{
 }
   
  }
+
