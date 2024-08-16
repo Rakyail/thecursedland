@@ -1,7 +1,6 @@
 body{
      background-color: rgb(12,10,20) !important;
      background-position: top;
-     width: 100%;
 }
 
 .navbar-expand{
@@ -439,6 +438,9 @@ table{
    .accordion{
     width: 100%;
  }
+ .tablecss{
+   width: 100%;
+ }
  td{
     padding: 5px;
     margin: 100px;
@@ -472,4 +474,3 @@ li,a{
 }
   
  }
-
