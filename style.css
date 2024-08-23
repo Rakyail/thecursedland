@@ -10,7 +10,9 @@ body{
     padding-left: 3%;
     margin-left: 0%;
 }
-
+.cards{
+   background-color: #0b1703;
+}
 /* NAVİGATİON CSS */
 li{
    font-family: "Rye", serif;
