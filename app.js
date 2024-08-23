@@ -56,3 +56,7 @@ $cards
       $card.addClass("animated");
     },3500);
   });
+
+
+  
+

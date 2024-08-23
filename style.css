@@ -11,8 +11,10 @@ body{
     margin-left: 0%;
 }
 .cards{
-   background-color: #0b1703;
+   background-color: #191a18;
 }
+
+
 /* NAVİGATİON CSS */
 li{
    font-family: "Rye", serif;
@@ -27,10 +29,60 @@ a{
    text-decoration: none;
    color: aliceblue;
 }
+/* THE CURSEDLAND CHARACTERS TEXT CSS */
+
+
+
+:root {
+  --color-background: #4cc903;
+  --stroke-width: calc(1em / 16);
+  --font-size: 30vmin;
+  --font-weight: 600;
+  --letter-spacing: calc(1em / 9);
+}
+
+.paragrafAbutUs{
+   text-align: center;
+   background-clip: text;
+   background-image: linear-gradient(to right, #3313e8, #728658, #e51414, #534960d2);
+   color: var(--color-background);
+   font-size: calc(var(--font-size) / 2.5); 
+   font-weight: var(--font-weight );
+   padding: calc(var(--stroke-width) / 0.9);
+   -webkit-text-stroke-color: transparent;
+   -webkit-text-stroke-width: var(--stroke-width);
+
+}
+
+@keyframes filling {
+   from{
+     background-position: center 25%;
+   }
+   to {
+     background-position: center 50%;
+   }
+ }
+ 
+ .container-text {
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-image:  url(./img/elf.img.png);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   color:  #66dd17;
+   padding-top: 10px;
+   font-size: 100px;
+   font-family: 'Bungee', cursive;
+   animation: filling 5s infinite;
+ }
+/* THE CURSEDLAND CHARACTERS TEXT CSS end */
+
+
 
 :root {
    --color1: rgb(0, 231, 255);
-   --color2: rgb(255, 0, 231);
+   --color2: rgb(98, 181, 46);
    --back: url(./img/at.png);
    
    --charizard1: #fac;
@@ -39,9 +91,9 @@ a{
    --pika1: #54a29e;
    --pika2: #a79d66;
    --pikafront: url(./img/beast.png);
-   --eevee1: #efb2fb;
-   --eevee2: #acc6f8;
-   --eeveefront: url(./img/human.img.png);
+   --warrior1: #efb2fb;
+   --warrior2: #acc6f8;
+   --warriorfront: url(./img/human.img.png);
    --mewtwo1: #efb2fb;
    --mewtwo2: #acc6f8;
    --mewtwofront: url(./img/undead.img.png);
@@ -60,7 +112,7 @@ a{
      width: clamp(12.9vw, 61vh, 18vw);
      height: clamp(18vw, 85vh, 25.2vw);
    }
- 
+   height: 60vh;
    position: relative;
    overflow: hidden;
    margin: 20px;
@@ -106,13 +158,13 @@ a{
    --color2: var(--mewtwo2);
    --front: var(--mewtwofront);
  }
- .card.eevee {
+ .card.warrior {
    --color1: #ec9bb6;
    --color2: #ccac6f;
    --color3: #69e4a5;
    --color4: #8ec5d6;
    --color5: #b98cce;
-   --front: var(--eeveefront);
+   --front: var(--warriorfront);
  }
  
  .card:before,
@@ -304,12 +356,12 @@ a{
    }
  }
  
- .card.eevee:hover {
+ .card.warrior:hover {
    box-shadow: 0 0 30px -5px white, 0 0 10px -2px white,
      0 55px 35px -20px rgba(0, 0, 0, 0.5);
  }
- .card.eevee:hover:before,
- .card.eevee.active:before {
+ .card.warrior:hover:before,
+ .card.warrior.active:before {
    background-image: linear-gradient(
      115deg,
      transparent 20%,
@@ -347,7 +399,7 @@ a{
    &:before,
    &:after {
      animation: none;
-     // opacity: 1;
+      opacity: 1;
    }
  }
  .demo .card:nth-of-type(1) {
@@ -375,13 +427,7 @@ a{
    font-size: 6vh;
  }
  
- html,
- body {
-   height: 100%;
-   padding: 0;
-   z-index: 1;
-   transform: translate3d(0, 0, 0.1px);
- }
+
 
  h1 {
    color: white;
@@ -462,11 +508,7 @@ a{
    color: cyan;
  }
  
- html,
- body,
- main {
-   min-height: 100%;
- }
+
  
  @keyframes rubberBand {
    from {
@@ -917,6 +959,19 @@ table{
     display: block;
    
  }
+ .container-text {
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-image:  url(./img/elf.img.png);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   color:  #66dd17;
+   padding-top: 10px;
+   font-size: 30px;
+   font-family: 'Bungee', cursive;
+   animation: filling 5s infinite;
+ }
 
 .card{
     background-color: rgb(12,10,20) !important;
@@ -929,7 +984,15 @@ li,a{
     color: white;
 }
 
-
+li{
+   font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    list-style-type:none;
+}
 
 
   
