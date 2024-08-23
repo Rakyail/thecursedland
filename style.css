@@ -1,6 +1,5 @@
 body{
      background-color: rgb(12,10,20) !important;
-     background-position: top;
 }
 
 .navbar-expand{
@@ -8,13 +7,13 @@ body{
 }
 .logo{
     display: flex;
-    padding-left: 1%;
+    padding-left: 3%;
     margin-left: 0%;
 }
 
 /* NAVİGATİON CSS */
 li{
-     font-family: "Rye", serif;
+   font-family: "Rye", serif;
     font-weight: 400;
     font-style: normal;
     display: flex;
@@ -93,44 +92,6 @@ button{
 }
 /* CHARACTER DETAİL CSS*/
 
-.human{
-    box-sizing: border-box;
-    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/human.img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center -6;
-    border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
-}
-
-.beast{
-
-    box-sizing: border-box;
-    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/beast.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
-}
-.elf{
-    box-sizing: border-box;
-    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/elf.img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center -5;
-    border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
-}
-.undead{
-    box-sizing: border-box;
-    background:linear-gradient(rgba(0,0,0,.9),rgba(0, 0, 2, 0.6)), url(./img/undead.img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center -10;
-    border: 4px solid rgb(16, 12, 12);
-    box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
-}
 
 .mainPageasaboutus .carousel-inner{
     width: 100%;
@@ -192,12 +153,7 @@ iframe{
    
 
 }
-table{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
 
-}
 
 .accordionDesktop{
     justify-content: center;
@@ -216,6 +172,31 @@ table{
 }
 .accordion-button:focus{
     box-shadow: none;
+}
+
+
+
+/* WARRİOR İTEMS CSS PAGE */
+table{
+   font-family: "Kanit", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+   color: rgb(127, 185, 35);
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   table-layout: fixed;
+
+}
+ .titleForİtemName{
+
+   font-family: "Kanit", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+   color: rgb(222, 220, 235);
+   justify-content: center;
+   align-items: center;
+   display: flex;
 }
 
 @media (max-width: 768px) {
@@ -418,12 +399,14 @@ table{
     align-items: center;
     text-align: center;
  }
-  
+
  }
  @media (max-width: 660px) {
+
     .TableDesktop{
        display: none;
     }
+
  
     .accordionMobile{
        display: block;
@@ -437,9 +420,6 @@ table{
    }
    .accordion{
     width: 100%;
- }
- .tablecss{
-   width: 100%;
  }
  td{
     padding: 5px;
@@ -472,5 +452,9 @@ li,a{
     text-decoration: none;
     color: white;
 }
+
+
+
+
   
  }
