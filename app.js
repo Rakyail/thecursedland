@@ -54,5 +54,5 @@ $cards
     $card.removeAttr("style");
     x = setTimeout(function() {
       $card.addClass("animated");
-    },2500);
+    },3500);
   });
