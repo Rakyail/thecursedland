@@ -13,8 +13,66 @@ body{
 .cards{
    background-color: #191a18;
 }
+/* MOBİLE NAVİGATİON CSS */
+ .card {
+   width: 71.5vw;
+   height: 100vw;
+   width: clamp(200px, 61vh, 18vw);
+   height: clamp(280px, 85vh, 25.2vw);
+   @media screen and (min-width: 600px) {
+     width: 61vh;
+      height: 105vh;
+     max-width: 500px;
+     max-height: 700px;
+     width: clamp(12.9vw, 61vh, 18vw);
+     height: clamp(18vw, 85vh, 25.2vw);
+   }
+  height: auto;
+   border-radius: 5% / 3.5%;
+   box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2),
+     -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent,
+     0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+ 
+   transition: transform 0.5s ease, box-shadow 0.2s ease;
+   will-change: transform, filter;
+ 
+   background-color: #040712;
+   background-image: var(--front);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   transform-origin: center;
+ }
+
+/* mOBİLE NAVİGATİON CSS END */
 
 
+
+/* MOBİLE NAVİGATİON CSS */
+.card {
+  width: 71.5vw;
+  height: 100vw;
+  width: clamp(200px, 61vh, 18vw);
+  height: clamp(280px, 85vh, 25.2vw);
+  @media screen and (min-width: 800px) {
+    width: 61vh;
+     height: 105vh;
+    max-width: 500px;
+    max-height: 700px;
+    width: clamp(12.9vw, 61vh, 18vw);
+    height: clamp(18vw, 85vh, 25.2vw);
+  }
+ 
+ height: auto;
+  border-radius: 5% / 3.5%;
+  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2),
+    -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent,
+    0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+
+}
 /* NAVİGATİON CSS */
 li{
    font-family: "Rye", serif;
@@ -98,21 +156,20 @@ a{
    --mewtwo2: #acc6f8;
    --mewtwofront: url(./img/undead.img.png);
  }
- 
- .card {
+
+ .cardss {
    width: 71.5vw;
    height: 100vw;
    width: clamp(200px, 61vh, 18vw);
    height: clamp(280px, 85vh, 25.2vw);
    @media screen and (min-width: 600px) {
      width: 61vh;
-      height: 85vh;
+      height: 105vh;
      max-width: 500px;
      max-height: 700px;
      width: clamp(12.9vw, 61vh, 18vw);
      height: clamp(18vw, 85vh, 25.2vw);
    }
-   height: 60vh;
    position: relative;
    overflow: hidden;
    margin: 20px;
@@ -136,29 +193,29 @@ a{
    transform-origin: center;
  }
  
- .card:hover {
+ .cardss:hover {
    box-shadow: -20px -20px 30px -25px var(--color1),
      20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1),
      7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3),
      0 55px 35px -20px rgba(0, 0, 0, 0.5);
  }
  
- .card.charizard {
+ .cardss.charizard {
    --color1: var(--charizard1);
    --color2: var(--charizard2);
    --front: var(--charizardfront);
  }
- .card.pika {
+ .cardss.pika {
    --color1: var(--pika1);
    --color2: var(--pika2);
    --front: var(--pikafront);
  }
- .card.mewtwo {
+ .cardss.mewtwo {
    --color1: var(--mewtwo1);
    --color2: var(--mewtwo2);
    --front: var(--mewtwofront);
  }
- .card.warrior {
+ .cardss.warrior {
    --color1: #ec9bb6;
    --color2: #ccac6f;
    --color3: #69e4a5;
@@ -167,8 +224,8 @@ a{
    --front: var(--warriorfront);
  }
  
- .card:before,
- .card:after {
+ .cardss:before,
+ .cardss:after {
    content: "";
    position: absolute;
    left: 0;
@@ -181,7 +238,7 @@ a{
    transition: all 0.33s ease;
  }
  
- .card:before {
+ .cardss:before {
    background-position: 50% 50%;
    background-size: 300% 300%;
    background-image: linear-gradient(
@@ -198,7 +255,7 @@ a{
    z-index: 1;
  }
  
- .card:after {
+ .cardss:after {
    opacity: 1;
    background-image: url(./img/sparkles.webp),
      url(./img/holo.webp),
@@ -221,20 +278,20 @@ a{
    opacity: 0.75;
  }
  
- .card.active:after,
- .card:hover:after {
+ .cardss.active:after,
+ .cardss:hover:after {
    filter: brightness(1) contrast(1);
    opacity: 1;
  }
  
- .card.active,
- .card:hover {
+ .cardss.active,
+ .cardss:hover {
    animation: none;
    transition: box-shadow 0.1s ease-out;
  }
  
- .card.active:before,
- .card:hover:before {
+ .cardss.active:before,
+ .cardss:hover:before {
    animation: none;
    background-image: linear-gradient(
      110deg,
@@ -250,15 +307,15 @@ a{
    transition: none;
  }
  
- .card.active:before,
- .card:hover:before,
- .card.active:after,
- .card:hover:after {
+ .cardss.active:before,
+ .cardss:hover:before,
+ .cardss.active:after,
+ .cardss:hover:after {
    animation: none;
    transition: none;
  }
  
- .card.animated {
+ .cardss.animated {
    transition: none;
    animation: holoCard 12s ease 0s 1;
    &:before {
@@ -356,12 +413,12 @@ a{
    }
  }
  
- .card.warrior:hover {
+ .cardss.warrior:hover {
    box-shadow: 0 0 30px -5px white, 0 0 10px -2px white,
      0 55px 35px -20px rgba(0, 0, 0, 0.5);
  }
- .card.warrior:hover:before,
- .card.warrior.active:before {
+ .cardss.warrior:hover:before,
+ .cardss.warrior.active:before {
    background-image: linear-gradient(
      115deg,
      transparent 20%,
@@ -374,18 +431,18 @@ a{
    );
  }
  
- .demo .card {
+ .demo .cardss{
    background-image: var(--back);
    font-size: 2vh;
  }
- .demo .card > span {
+ .demo .cardss > span {
    position: relative;
    top: 45%;
  }
  
- .demo .card:nth-of-type(1),
- .demo .card:nth-of-type(2),
- .demo .card:nth-of-type(3) {
+ .demo .cardss:nth-of-type(1),
+ .demo .cardss:nth-of-type(2),
+ .demo .cardss:nth-of-type(3) {
    width: 20vh;
    height: 27.5vh;
    box-shadow: inset 0 0 0 1px rgba(white, 0.4),
@@ -393,28 +450,28 @@ a{
    animation: none;
  }
  
- .demo .card:nth-of-type(1),
- .demo .card:nth-of-type(2),
- .demo .card:nth-of-type(3) {
+ .demo .cardss:nth-of-type(1),
+ .demo .cardss:nth-of-type(2),
+ .demo .cardss:nth-of-type(3) {
    &:before,
    &:after {
      animation: none;
       opacity: 1;
    }
  }
- .demo .card:nth-of-type(1) {
+ .demo .cardss:nth-of-type(1) {
    &:before,
    &:after {
      display: none;
    }
  }
- .demo .card:nth-of-type(2) {
+ .demo .cardss:nth-of-type(2) {
    background: none;
    &:before {
      display: none;
    }
  }
- .demo .card:nth-of-type(3) {
+ .demo .cardss:nth-of-type(3) {
    background: none;
    &:after {
      display: none;
@@ -556,10 +613,7 @@ button{
     align-items: center;
 }
 
-/* NAVİGATİON HEADER (a)  */
-.navigation a{
-    color: black !important;
-}
+
 
 /* navigation Border css */
 .navigationBorder{
@@ -590,7 +644,8 @@ button{
     border-image-slice: 44%; 
     border-image-width:100%;
     border-image-repeat:stretch;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+     
 }
 .navbar-toggler-icon {
     background-color: white;
@@ -917,8 +972,101 @@ table{
     align-items: center;
     text-align: center;
  }
+ .container-text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image:  url(./img/elf.img.png);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color:  #66dd17;
+  padding-top: 10px;
+  font-size: 30px;
+  font-family: 'Bungee', cursive;
+  animation: filling 5s infinite;
+}
+
 
  }
+
+
+ @media (max-width: 965px) {
+
+  .TableDesktop{
+     display: none;
+  }
+
+
+  .accordionMobile{
+     display: block;
+    }
+
+ .tableRow{
+  width: 100% !important;
+ }
+ .border{
+  width: 100% !important;
+ }
+ .accordion{
+  width: 100%;
+}
+td{
+  padding: 5px;
+  margin: 100px;
+}
+table{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.accordion-body{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.header{
+  display: none;
+ 
+}
+.container-text {
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ background-image:  url(./img/elf.img.png);
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ color:  #66dd17;
+ padding-top: 10px;
+ font-size: 30px;
+ font-family: 'Bungee', cursive;
+ animation: filling 5s infinite;
+}
+
+.card{
+  background-color: rgb(12,10,20) !important;
+  text-decoration: none;
+ 
+}
+li,a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+li{
+ font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  list-style-type:none;
+}
+
+
+}
  @media (max-width: 660px) {
 
     .TableDesktop{
@@ -993,7 +1141,6 @@ li{
     padding: 10px;
     list-style-type:none;
 }
-
 
   
  }
