@@ -44,6 +44,10 @@ body{
    transform-origin: center;
  }
 
+ table, th, td {
+  border: 1px solid white;
+}
+
 /* mOBİLE NAVİGATİON CSS END */
 
 
@@ -141,8 +145,7 @@ a{
 :root {
    --color1: rgb(0, 231, 255);
    --color2: rgb(98, 181, 46);
-   --back: url(./img/at.png);
-   
+   --back: url(./img/ork.webp);
    --charizard1: #fac;
    --charizard2: #ddccaa;
    --charizardfront: url(./img/elfBig.png);
@@ -155,44 +158,58 @@ a{
    --mewtwo1: #efb2fb;
    --mewtwo2: #acc6f8;
    --mewtwofront: url(./img/undead.img.png);
- }
 
- .cardss {
-   width: 71.5vw;
-   height: 100vw;
-   width: clamp(200px, 61vh, 18vw);
-   height: clamp(280px, 85vh, 25.2vw);
-   @media screen and (min-width: 600px) {
-     width: 61vh;
-      height: 105vh;
-     max-width: 500px;
-     max-height: 700px;
-     width: clamp(12.9vw, 61vh, 18vw);
-     height: clamp(18vw, 85vh, 25.2vw);
-   }
-   position: relative;
-   overflow: hidden;
-   margin: 20px;
-   overflow: hidden;
-   z-index: 10;
-   touch-action: none;
- 
-   border-radius: 5% / 3.5%;
-   box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2),
-     -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent,
-     0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
- 
-   transition: transform 0.5s ease, box-shadow 0.2s ease;
-   will-change: transform, filter;
- 
-   background-color: #040712;
-   background-image: var(--front);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: 50% 50%;
-   transform-origin: center;
  }
  
+ .cardss {
+  /* Üç farklı genişlik ve yükseklik ayarı, sırasıyla vh ve vw değerleri kullanılarak ayarlanmıştır */
+  width: clamp(200px, 61vh, 18vw);
+  height: clamp(280px, 85vh, 25.2vw);
+
+  /* Medya sorgusu ile ekran genişliği 600px ve üzeri olduğunda geçerli olacak ayarlar */
+  @media screen and (min-width: 600px) {
+    width: clamp(12.9vw, 61vh, 18vw);
+    height: clamp(18vw, 85vh, 25.2vw);
+    max-width: 500px;
+    max-height: 700px;
+  }
+
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  z-index: 10;
+  touch-action: none;
+
+  border-radius: 5% / 3.5%;
+  box-shadow: 
+    -5px -5px 5px -5px var(--color1), 
+    5px 5px 5px -5px var(--color2),
+    -7px -7px 10px -5px transparent, 
+    7px 7px 10px -5px transparent,
+    0 0 5px 0 rgba(255, 255, 255, 0), 
+    0 55px 35px -20px rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+
+  background-color: #040712;
+  background-image: var(--front);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
  .cardss:hover {
    box-shadow: -20px -20px 30px -25px var(--color1),
      20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1),
@@ -216,11 +233,11 @@ a{
    --front: var(--mewtwofront);
  }
  .cardss.warrior {
-   --color1: #ec9bb6;
-   --color2: #ccac6f;
+   --color1: #110106;
+   --color2: #c2cd27;
    --color3: #69e4a5;
-   --color4: #8ec5d6;
-   --color5: #b98cce;
+   --color4: #010b0e;
+   --color5: #8906c6;
    --front: var(--warriorfront);
  }
  
@@ -353,7 +370,7 @@ a{
      background-position: 60% 60%;
      filter: brightness(1) contrast(1);
    }
-   55% {
+   55% {  
      opacity: 0.33;
      background-position: 45% 45%;
      filter: brightness(1.2) contrast(1.25);
@@ -750,17 +767,7 @@ iframe{
 
 
 /* WARRİOR İTEMS CSS PAGE */
-table{
-   font-family: "Kanit", sans-serif;
-   font-weight: 600;
-   font-style: normal;
-   color: rgb(127, 185, 35);
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   table-layout: fixed;
 
-}
  .titleForİtemName{
 
    font-family: "Kanit", sans-serif;
@@ -784,22 +791,12 @@ table{
     .accordion{
        width: 100%;
     }
-    .TableDesktop{
-       display: none;
-    }
+  
  
     .accordionMobile{
        display: block;
       }
-      table{
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-    }
-    table, th, td{
-       text-align: center;
-       padding: 8px;
-     }
+
      .navigationBorder{
         display: none;
      }
@@ -837,23 +834,12 @@ table{
        width: 100%;
     }
   
-    .TableDesktop{
-       display: none;
-    }
+  
  
     .accordionMobile{
        display: block;
       }
-      table{
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-    }
-    table, th, td {
-       border: 1px solid #ddd; /* Cell borders */
-       text-align: center;
-       padding: 8px;
-     }
+   
      
      .accordion-body{
         width: 100% !important;
@@ -899,24 +885,12 @@ table{
     .accordion{
        width: 100%;
     }
-    .TableDesktop{
-       display: none;
-    }
+   
  
     .accordionMobile{
        display: block;
       }
-  
-      table{
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-    }
-    table, th, td {
-       border: 1px solid #ddd; /* Cell borders */
-       text-align: center;
-       padding: 8px;
-     }
+
      .accordion-body{
         display: flex;
         justify-content: center;
@@ -946,9 +920,7 @@ table{
  
  /* BONUSES PAGE TABLE MOBİLE CSS */
  @media (max-width: 600px) {
-    .TableDesktop{
-       display: none;
-    }
+
     .accordion-body{
         width: 100% !important;
         display: flex;
@@ -961,17 +933,11 @@ table{
        display: block;
       }
  
-   .tableRow{
-    width: 100% !important;
-   }
+ 
    .border{
     width: 100% !important;
    }
-   table{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
- }
+
  .container-text {
   text-align: center;
   align-items: center;
@@ -992,32 +958,19 @@ table{
 
  @media (max-width: 965px) {
 
-  .TableDesktop{
-     display: none;
-  }
+  
 
 
   .accordionMobile{
      display: block;
     }
 
- .tableRow{
-  width: 100% !important;
- }
+
  .border{
   width: 100% !important;
  }
  .accordion{
   width: 100%;
-}
-td{
-  padding: 5px;
-  margin: 100px;
-}
-table{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 .accordion-body{
   width: 100% !important;
@@ -1069,33 +1022,20 @@ li{
 }
  @media (max-width: 660px) {
 
-    .TableDesktop{
-       display: none;
-    }
-
+ 
  
     .accordionMobile{
        display: block;
       }
  
-   .tableRow{
-    width: 100% !important;
-   }
+ 
    .border{
     width: 100% !important;
    }
    .accordion{
     width: 100%;
  }
- td{
-    padding: 5px;
-    margin: 100px;
- }
- table{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
- }
+
  .accordion-body{
     width: 100% !important;
     display: flex;
@@ -1142,5 +1082,14 @@ li{
     list-style-type:none;
 }
 
-  
+
+.tablee{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+table, th, td {
+  border: 1px solid white;
+  padding: 1px;
+}
  }

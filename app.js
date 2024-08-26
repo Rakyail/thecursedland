@@ -3,6 +3,7 @@ var x;
 var $cards = $(".card");
 var $style = $(".hover");
 
+
 $cards
   .on("mousemove touchmove", function(e) { 
     // normalise touch/mouse
