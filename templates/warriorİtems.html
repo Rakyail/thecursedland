@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Items Detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+    <title>Items Detail</title>
+
 </head>
 <body>
 
 <!-- NAVBAR -->
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg ">
         <a href="../index.html" class="logo"><img src="../img/tclLogo.png" alt="logo" class="logo"></a> 
 
         <div class="container py-4">
@@ -39,38 +40,43 @@
 <!-- NAVBAR END -->
 
 
-<!-- MOBILE VERSION NAVIGATION -->
-<div class="header">
-    <div class="container mobilecontiner">
-        <div class="row">
-            <div class="col-sm-12 mobileNavigation">
-                <p>
-                    <button class="btn mainMenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                        Main Menu
-                    </button>
-                </p>
-                <div>
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <div class="card card-body">
-                            <ul class="navigationDiv">
-                                <li><a href="../templates/aboutGame.html" class="navigationLi">About Game</a></li>
-                                <li><a href="../templates/kingdoms.html" class="navigationLi">Kingdoms</a></li>
-                                <li><a href="../templates/characters.html" class="navigationLi">Characters</a></li>
-                                <li><a href="../templates/items.html" class="navigationLi">Items</a></li>
-                                <li><a href="../templates/maps.html" class="navigationLi">Maps</a></li>
-                                <li><a href="../templates/npc.html" class="navigationLi">Npc</a></li>
-                                <li><a href="../templates/mobs.html" class="navigationLi">Mobs</a></li>
-                                <li><a href="../templates/tokens.html" class="navigationLi">Tokens</a></li>
-                                <li><a href="../templates/nft.html" class="navigationLi">Nft</a></li>
-                            </ul>
-                        </div>
-                    </div>
+<!-- MOBİLE VERSİON NAVİGATİON -->
+<div class="header d-sm-block d-md-none d-xl-none d-lg-none   ">
+
+  <div class="container moblilecontiner">
+  <div class="row">
+      <div class="col-sm-12 mobileNavigation">
+          <p>
+              <button class="btn mainMenu text-white fw-bold border  border-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Main Menu
+              </button>
+            </p>
+            <div>
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body">
+          <div class="navigationDiv">
+              <li><a href="./templates/aboutGame.html" class="navigationLi">About Game</a></li>
+              <li><a href="./templates/kingdoms.html" class="navigationLi">Kingdoms</a></li>
+              <li><a href="./templates/characters.html" class="navigationLi">Characters</a></li>
+              <li><a href="./templates/items.html" class="navigationLi">İtems</a></li>
+              <li><a href="./templates/maps.html" class="navigationLi">Maps</a></li>
+              <li><a href="./templates/npc.html" class="navigationLi">Npc</a></li>
+              <li><a href="./templates/mobs.html" class="navigationLi">Mobs</a></li>
+              <li><a href="./templates/tokens.html" class="navigationLi">Tokens</a></li>
+              <li><a href="./templates/nft.html" class="navigationLi">Nft</a></li>
+              
+          </div>
+          </div>
+
                 </div>
             </div>
-        </div>
-    </div>
+      </div>
+  </div>
 </div>
-<!-- MOBILE VERSION NAVIGATION END -->
+</div>
+
+<!-- MOBİLE VERSİON NAVİGATİON END -->
+
 <!-- ITEM DETAIL -->
 <section class="container">
     <div class="row">
@@ -83,95 +89,261 @@
                             d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z" />
                     </svg>
                 </span>
-                <span class="fs-12 text-light mt-5">Warrior Detail</span>
+                <span class="fs-12 text-light mt-5">Human Detail</span>
             </h2>
         </div>
     </div>
 </section>
-<div class="container">
+<div class="container p-0 m-0 ">
     <div class="row">
         <div class="col-sm-6">
+            <div class="warrior" style="justify-content: center; align-items: center; display: flex;">
+                <div class="cardss warrior animated warriorsİmage"></div>
+            </div>
+        </div>
+        <div class="col-sm-6 humanText">
             <h5 class="text-white mt-5 pt-5" style="justify-content: center; align-items: center;">
                 Warriors possess formidable strength and excel in hand-to-hand combat. It's wise to keep your distance if you're looking to avoid a direct confrontation.
             </h5>
             <h6 class="text-white mt-3 pt-0">Weapon: Sword</h6>
             <h6 class="text-white mt-0 pt-0">Damage Type: Physical</h6>
         </div>
-        <div class="col-sm-6">
-            <div class="warrior" style="justify-content: center; align-items: center; display: flex;">
-                    <div class="cardss warrior animated"></div>
-            </div>
-        </div>
+    
     </div>
 </div>
-<div class="container">
-        <div style="overflow-x: auto;" class="text-white tablee">
-            <table>
-                <tr>
-                    <th class="text-center" rowspan="6">
-                        <div class="armors">
-                            <div class="warrior" style="justify-content: center; align-items: center; display: flex;">
-                                <div class="cardss warrior animated rounded-circle" style="width: 60px; height: 60px;"></div>
-                         </div>
-                        <h6>Novice Armor</h6>
+    
+      <hr style="color: azure;">
+      <div class="container  tableContainer" 
+      style="box-shadow: rgba(5, 197, 40, 0.25) 5px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 20px 0.175em 0.5em, rgba(192, 234, 189, 0.1) 2px 8px 9px 1px inset; justify-content: center; align-items: center;">
+        <div class="row justify-content-center" >
+          <div class="col-md-12 col-sm-12">
+            <div class="p-5 m-5 İtrmdetail ">
+              <div class="text-white">
+                <div class="accordion accordion-flush text-center bg-danger" id="accordionFlushExample">
+                  <div class=" İtemdetailAcordion text-center ">
+                    <h2 class="accordion-header text-center" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Armors
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse m-0 p-0" data-bs-parent="#accordionFlushExample ">
+                      <table class="text-dark  TableClass" >
+                        <div style="overflow-x: auto;" class="text-white tablee text-center">
+                          <div class="armorİmages warriors pt-0 mt-0 " >
+                            <div class="cardss warriorArmor warriors animated  armorWidthCssForİtemDetail">
+                              <img src="../img/noviceArmor.png" class="img-fluid armorWidthCssForİtemDetail">" alt="" >
+                            </div>
+                          </div>
                         </div>
-                        <tr  style="background-color: blue;">
-                <th>lvl</th>
-                <th>+0</th>
-                <th>+1</th>
-                <th>+2</th>
-                <th>+3</th>
-                <th>+4</th>
-                <th>+5</th>
-                <th>+6</th>
-                <th>+7</th>
-                <th>+8</th>
-                <th>+9</th>
-              </tr >
-              <tr>
-                <td >Defance</td>
-                <td>12</td>
-                <td>18</td>
-                <td>24</td>
-                <td>30</td>
-                <td>36</td>
-                <td>42</td>
-                <td>48</td>
-                <td>54</td>
-                <td>60</td>
-                <td>666</td>
-              </tr>
-              <tr style="background-color:rgb(30, 232, 34);">
-                <td> <h6>Uprage Metal</h6></td>
-                <td>9444</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>944</td>
-              </tr>
-              <tr>
-                <td>uprage Cursed</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>679</td>
-              </tr>
-            </table>
+                          <h4 class="text-center p-1 d-flex titleArmor  m-3" style="box-shadow: 0px 9px 30px rgba(172, 255, 5, 0.989); border-radius: 26px /26px; align-items: center;
+                          justify-content: center;  width:100%; ">Novice Armor</h4>
+                          <tr>
+                            <th >Lvl</th>
+                            <th>+0</th>
+                            <th>+1</th>
+                            <th>+2</th>
+                            <th>+3</th>
+                            <th>+4</th>
+                            <th>+5</th>
+                            <th>+6</th>
+                            <th>+7</th>
+                            <th>+8</th>
+                            <th>+9</th>
+                          </tr>
+                          <tr>
+                            <th>Defance</th>
+                            <td>12</td>
+                            <td>18</td>
+                            <td>24</td>
+                            <td>30</td>
+                            <td>36</td>
+                            <td>42</td>
+                            <td>48</td>
+                            <td>54</td>
+                            <td>60</td>
+                            <td>666</td>
+                          </tr>
+                          <tr>
+                            <th> Uprage Metal</th>
+                            <td>9444</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>944</td>
+                          </tr>
+                          <tr>
+                            <th>uprage Cursed</th>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>687</td>
+                            <td>67</td>
+                            <td>677</td>
+                            <td>667</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>679</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="5">Bonuses</th>
+                            <th>Health</th>
+                          </tr>
+                        </table>
+                        <hr style="height:4px;border-width:0;color:rgb(3, 2, 2);background-color:rgb(4, 0, 0)">
+                        <table class="text-dark p-0 m-0 TableClass">
+                          <div style="overflow-x: auto;" class="text-white tablee text-center">
+                            <div class="armorİmages warriors pt-0 mt-0 " >
+                              <div class="cardss warriorArmor warriors animated" style="width: 50px; height: 50px; ">
+                                <img src="../img/impreialArmor.png" alt="" class="img-fluid" >
+                              </div>
+                            </div>
+                          </div>
+                          <h4 class="text-center p-0 m-0 titleArmor">Imperial Armor</h4>
+                          <tr>
+                            <th class="text-center">Lvl</th>
+                            <th>+0</th>
+                            <th>+1</th>
+                            <th>+2</th>
+                            <th>+3</th>
+                            <th>+4</th>
+                            <th>+5</th>
+                            <th>+6</th>
+                            <th>+7</th>
+                            <th>+8</th>
+                            <th>+9</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center">Defance</th>
+                            <td>12</td>
+                            <td>18</td>
+                            <td>24</td>
+                            <td>30</td>
+                            <td>36</td>
+                            <td>42</td>
+                            <td>48</td>
+                            <td>54</td>
+                            <td>60</td>
+                            <td>666</td>
+                          </tr>
+                          <tr>
+                            <th> Uprage Metal</th>
+                            <td>9444</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>944</td>
+                          </tr>
+                          <tr>
+                            <th>uprage Cursed</th>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>687</td>
+                            <td>67</td>
+                            <td>677</td>
+                            <td>667</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>679</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="5">Bonuses</th>
+                            <th>Health</th>
+                          </tr>
+                        </table>
+                        <hr style="height:4px;border-width:0;color:rgb(3, 2, 2);background-color:rgb(4, 0, 0)">
+                        <table class="text-dark p-0 m-0 TableClass">
+                          <div style="overflow-x: auto;" class="text-white tablee text-center">
+                            <div class="armorİmages warriors pt-0 mt-0 " >
+                              <div class="cardss warriorArmor warriors animated  " style="width: 50px; height: 50px; ">
+                                <img src="../img/DrragonArmor.png" alt="" class="img-fluid" >
+                              </div>
+                            </div>
+                          </div>
+                          <h4 class="text-center p-0 m-0 titleArmor">Dragon Armor</h4>
+                          <tr>
+                            <th class="text-center">Lvl</th>
+                            <th>+0</th>
+                            <th>+1</th>
+                            <th>+2</th>
+                            <th>+3</th>
+                            <th>+4</th>
+                            <th>+5</th>
+                            <th>+6</th>
+                            <th>+7</th>
+                            <th>+8</th>
+                            <th>+9</th>
+                          </tr>
+                          <tr>
+                            <th class="text-center">Defance</th>
+                            <td>12</td>
+                            <td>18</td>
+                            <td>24</td>
+                            <td>30</td>
+                            <td>36</td>
+                            <td>42</td>
+                            <td>48</td>
+                            <td>54</td>
+                            <td>60</td>
+                            <td>666</td>
+                          </tr>
+                          <tr>
+                            <th> Uprage Metal</th>
+                            <td>9444</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>944</td>
+                          </tr>
+                          <tr>
+                            <th>uprage Cursed</th>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>687</td>
+                            <td>67</td>
+                            <td>677</td>
+                            <td>667</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>679</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="5">Bonuses</th>
+                            <th>Health</th>
+                          </tr>
+                        </table>
+                        <hr style="height:4px;border-width:0;color:rgb(3, 2, 2);background-color:rgb(4, 0, 0)">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-    </div>
+        </div>
+      
 
-<script src="app.js"></script>
+             
+
+    
+
+<!-- <script src="../app.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

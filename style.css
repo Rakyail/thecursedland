@@ -45,10 +45,9 @@ body{
  }
 
  table, th, td {
-  border: 1px solid white;
+  border: 3px solid rgb(15, 2, 2);
 }
 
-/* mOBİLE NAVİGATİON CSS END */
 
 
 
@@ -157,9 +156,38 @@ a{
    --warriorfront: url(./img/human.img.png);
    --mewtwo1: #efb2fb;
    --mewtwo2: #acc6f8;
-   --mewtwofront: url(./img/undead.img.png);
+   /* --warriorsfront: url(./img/noviceArmor.png); */
+   --mewtwofront:url(./img/undead.img.png);
+
+
 
  }
+
+ 
+ 
+ .cardss.warriorİmge  .warriorArmor{
+  background-image: var(--warriorsfront);
+  background-image: var(--warriorArmorfront); /* Yeni görseli burada kullanıyoruz */
+  /* Yeni görseli burada kullanıyoruz */
+
+
+  width: 100px; /* İstediğiniz genişlik */
+  height: 100px; /* İstediğiniz yükseklik */
+  transition: transform 0.3s ease; /* Geçiş animasyonu */
+  cursor: pointer; /* İmleç değişikliği */
+}
+.cardss.warrior.enlarged {
+    transform: scale(2); /* Görseli 2 kat büyütür */
+    z-index: 1000; /* Görseli öne çıkartır */
+}
+
+.TableClass{
+  height:30vh; 
+  justify-content:  center; 
+  align-items:center;
+   display:flexbox; 
+   
+}
  
  .cardss {
   /* Üç farklı genişlik ve yükseklik ayarı, sırasıyla vh ve vw değerleri kullanılarak ayarlanmıştır */
@@ -200,14 +228,26 @@ a{
   transform-origin: center;
 }
 table {
+  color;
   border-collapse: collapse;
   width: 100%;
+  background-color:#f0d0a0 !important;
+
+}
+
+.warriors{
+  background-color: rgb(12,10,20) !important;
+  
+}
+.İtemdetailAcordion{
+  background-color: rgb(12,10,20) !important;
 }
 
 th, td {
   text-align: left;
-  padding: 8px;
+  padding: 4px;
 }
+
 
 
  .cardss:hover {
@@ -539,7 +579,7 @@ th, td {
    }
  }
  
- .cards .card {
+ .cardss .card {
    &:nth-child(2) {
      &,
      &:before,
@@ -564,10 +604,11 @@ th, td {
  }
  
  p {
-   font-weight: 400;
+ 
+   font-weight: 600;
    font-size: 18px;
    padding: 1em;
-   background: rgba(0, 0, 0, 0.3);
+   background-color: rgb(12,10,20) !important;
    margin-top: 0;
    animation: rubberBand 1.5s linear 3s 1;
  }
@@ -576,12 +617,22 @@ th, td {
  }
  .promo img {
    margin-top: 10px;
-   max-width: 80%;
+   max-width: 50%;
  }
  p a {
-   color: cyan;
+   color:white;
  }
+
+
+ /* İTEM DETAİL İMAGE CSS ARMOR */
+ .armorİmages{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+
  
+ /* İTEM DETAİL İMAGE CSS ARMOR END */
 
  
  @keyframes rubberBand {
@@ -734,13 +785,15 @@ iframe{
     margin-top: 1rem;
     color: white ;
     box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 10px, #440563 0px 0px 10px;
-    border-width:10px; /* Kenarlık kalınlığı */
-    border-style: solid; /* Kenarlık tipi */
+    border-width:10px; 
+    border-style: solid; 
     border-image-source: url('./img/pngegg\ .png');
     border-image-slice: 155; /* Resmin dilimleme noktaları */
     border-image-width: 20px; /* Kenarlığın genişliği */
     width: 100%;
-   
+    justify-content: center;
+    align-items: center;
+,   
 
 }
 
@@ -750,23 +803,44 @@ iframe{
     align-items: center;
     width: 900px;
 }
-.accordion-item{
+.accordion-item{,
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
     border: none;
     background-color: rgb(12,10,20) !important;
     color: white;
 }
 .accordion-button:not(.collapsed){
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
     background-color: rgb(12,10,20) !important;
     box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 18px, #440563 0px 0px 10px;
     color: white !important;
 }
 .accordion-button:focus{
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
     box-shadow: none;
 }
 
 
 
-/* WARRİOR İTEMS CSS PAGE */
+/* HumanİTEMS CSS PAGE */
+
+.warriorsİmage{
+  width: 200px;
+  height: 200px;
+ }
+
+
+ .armorWidthCssForİtemDetail{
+  width: 90px;
+  height: 90px;
+ }
 
  .titleForİtemName{
 
@@ -953,6 +1027,8 @@ iframe{
 }
 
 
+
+
  }
 
 
@@ -1028,6 +1104,7 @@ li{
        display: block;
       }
  
+      İtrmdetail
  
    .border{
     width: 100% !important;
@@ -1041,6 +1118,9 @@ li{
     display: flex;
     justify-content: center;
     padding-top: 10px;
+ }
+ .İtrmdetail{
+  padding:0% !important;
  }
 
  .header{
@@ -1089,8 +1169,23 @@ li{
   align-items: center;
 }
 table, th, td {
-  border: 1px solid white;
+  border: 2px solid rgb(4, 3, 3);
+  padding: 0%;
+  margin: -10px;
+  text-align: center;
+  justify-content: center;
+}
+ .cardss.warriorİmge{
+  width: 60px;
+  height: 60px;
   padding: 0%;
   margin: 0%;
-}
+
+
+ }
+ .tableContainer .accordion .tablee{
+  position:fixed;
+   justify-content: center;
+   align-items: center;
+ }
  }

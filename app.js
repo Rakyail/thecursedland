@@ -61,3 +61,6 @@ $cards
 
   
 
+// clıck for bug ımage
+
+
