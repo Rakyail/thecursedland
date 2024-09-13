@@ -69,9 +69,9 @@ footer {
   font-size: 26px;
   color: #20f119;
 }
-/* .foooter{
+.foooter{
   box-shadow: rgba(240, 11, 11, 0.16) 0px 3px 6px, rgba(248, 20, 20, 0.23) 0px 3px 6px;
-} */
+}
 /* FOOTER END */
 
 
@@ -429,7 +429,7 @@ a{
  
  .cardss {
   width: clamp(123px, 51vh, 8vw);
-  height: clamp(250px, 45vh, 20.2vw);
+  height: clamp(250px, 65vh, 25.2vw);
 
   /* Medya sorgusu ile ekran genişliği 600px ve üzeri olduğunda geçerli olacak ayarlar */
   @media screen and (min-width: 600px) {
@@ -1338,7 +1338,7 @@ li{
 }
  @media (max-width: 660px) {
   
-
+ 
     .accordionMobile{
        display: block;
       }
@@ -1419,6 +1419,7 @@ table, th, td {
   padding: 0%;
   margin: 0%;
 
+
  }
  .tableContainer .accordion .tablee{
   position:fixed;
@@ -1426,10 +1427,3 @@ table, th, td {
    align-items: center;
  }
  }
-
- @media (max-width: 440px) {
-  .cardss {
-      flex: 0 0 50%; /* İki kartı yan yana yerleştirmek için her kartın genişliğini %50 yapar */
-      max-width: 50%; /* İki kartı yan yana yerleştirmek için her kartın genişliğini %50 yapar */
-  }
-}
