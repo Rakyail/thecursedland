@@ -401,17 +401,8 @@ a{
 
  
  
- .cardss.warriorİmge  .warriorArmor{
-  background-image: var(--warriorsfront);
-  background-image: var(--warriorArmorfront); /* Yeni görseli burada kullanıyoruz */
-  /* Yeni görseli burada kullanıyoruz */
 
-
-  width: 100px; /* İstediğiniz genişlik */
-  height: 100px; /* İstediğiniz yükseklik */
-  transition: transform 0.3s ease; /* Geçiş animasyonu */
-  cursor: pointer; /* İmleç değişikliği */
-}
+ 
 .cardss.warrior.enlarged {
     transform: scale(2); /* Görseli 2 kat büyütür */
     z-index: 1000; /* Görseli öne çıkartır */
