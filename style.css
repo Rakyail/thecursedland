@@ -1426,3 +1426,10 @@ table, th, td {
    align-items: center;
  }
  }
+
+ @media (max-width: 440px) {
+  .cardss {
+      flex: 0 0 50%; /* İki kartı yan yana yerleştirmek için her kartın genişliğini %50 yapar */
+      max-width: 50%; /* İki kartı yan yana yerleştirmek için her kartın genişliğini %50 yapar */
+  }
+}
