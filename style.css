@@ -67,7 +67,7 @@ footer {
   
   font-family: 'MedievalSharp', cursive;
   font-size: 26px;
-  color: #20f119;
+  color:white;
 }
 .foooter{
   box-shadow: rgba(240, 11, 11, 0.16) 0px 3px 6px, rgba(248, 20, 20, 0.23) 0px 3px 6px;
@@ -225,7 +225,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   z-index: 3;
   position: relative;
 }
@@ -373,7 +372,6 @@ a{
    padding-top: 10px;
    font-size: 100px;
    font-family: 'Bungee', cursive;
-   animation: filling 5s infinite;
  }
 /* THE CURSEDLAND CHARACTERS TEXT CSS end */
 
@@ -465,7 +463,6 @@ a{
   transform-origin: center;
 }
 table {
-  color;
   border-collapse: collapse;
   width: 100%;
   background-color:#f0d0a0 !important;
@@ -1191,7 +1188,6 @@ iframe{
   justify-content: center;
   background-image:  url(./img/elf.img.png);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   color:  #66dd17;
   padding-top: 10px;
   font-size: 30px;
@@ -1239,6 +1235,13 @@ iframe{
  background-image:  url(./img/elf.img.png);
  -webkit-text-fill-color: transparent;
  -webkit-background-clip: text;
+/* Standart söz dizimi */
+-ms-background-clip: border-box;
+/* Eski tarayıcılar için vendor prefix'ler */
+-webkit-background-clip: border-box;
+-moz-background-clip: border-box;    
+background-clip: border-box;     
+
  color:  #66dd17;
  padding-top: 10px;
  font-size: 30px;
@@ -1304,7 +1307,6 @@ li{
    justify-content: center;
    background-image:  url(./img/elf.img.png);
    -webkit-text-fill-color: transparent;
-   -webkit-background-clip: text;
    color:  #66dd17;
    padding-top: 10px;
    font-size: 30px;
