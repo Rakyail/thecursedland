@@ -1338,7 +1338,10 @@ li{
 }
  @media (max-width: 660px) {
   
- 
+ .cardss{
+  padding: 0%;
+  margin: 0%;
+ }
     .accordionMobile{
        display: block;
       }
@@ -1418,7 +1421,6 @@ table, th, td {
   height: 60px;
   padding: 0%;
   margin: 0%;
-
 
  }
  .tableContainer .accordion .tablee{
