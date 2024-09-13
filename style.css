@@ -428,9 +428,8 @@ a{
 }
  
  .cardss {
-  /* Üç farklı genişlik ve yükseklik ayarı, sırasıyla vh ve vw değerleri kullanılarak ayarlanmıştır */
-  width: clamp(200px, 61vh, 18vw);
-  height: clamp(280px, 85vh, 25.2vw);
+  width: clamp(123px, 51vh, 8vw);
+  height: clamp(250px, 45vh, 20.2vw);
 
   /* Medya sorgusu ile ekran genişliği 600px ve üzeri olduğunda geçerli olacak ayarlar */
   @media screen and (min-width: 600px) {
@@ -812,7 +811,7 @@ th, td {
  }
  
  @media screen and (min-width: 600px) {
-   .cards {
+   .cardss {
      flex-direction: row;
    }
  }
@@ -1338,14 +1337,13 @@ li{
 
 }
  @media (max-width: 660px) {
-
+  
  
     .accordionMobile{
        display: block;
       }
  
-      İtrmdetail
- 
+
    .border{
     width: 100% !important;
    }
