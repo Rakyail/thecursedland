@@ -372,6 +372,7 @@ a{
    padding-top: 10px;
    font-size: 100px;
    font-family: 'Bungee', cursive;
+   animation: filling 5s infinite;
  }
 /* THE CURSEDLAND CHARACTERS TEXT CSS end */
 
@@ -401,8 +402,17 @@ a{
 
  
  
+ .cardss.warriorİmge  .warriorArmor{
+  background-image: var(--warriorsfront);
+  background-image: var(--warriorArmorfront); /* Yeni görseli burada kullanıyoruz */
+  /* Yeni görseli burada kullanıyoruz */
 
- 
+
+  width: 100px; /* İstediğiniz genişlik */
+  height: 100px; /* İstediğiniz yükseklik */
+  transition: transform 0.3s ease; /* Geçiş animasyonu */
+  cursor: pointer; /* İmleç değişikliği */
+}
 .cardss.warrior.enlarged {
     transform: scale(2); /* Görseli 2 kat büyütür */
     z-index: 1000; /* Görseli öne çıkartır */
@@ -769,16 +779,6 @@ th, td {
    background-color: rgb(12,10,20) !important;
    margin-top: 0;
  }
- .promo {
-   margin-top: 50px;
- }
- .promo img {
-   margin-top: 10px;
-   max-width: 50%;
- }
- p a {
-   color:white;
- }
 
 
  /* İTEM DETAİL İMAGE CSS ARMOR */
@@ -828,11 +828,6 @@ th, td {
  
 /* NAVİGATİON CSS END */
 
-button{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 .navigationDiv ul li a {
     
     color: white;
@@ -844,7 +839,7 @@ button{
 
 
 
-/* navigation Border css */
+/*  main paage navigation Border css */
 .navigationBorder{
     box-shadow: rgba(233, 223, 223, 0.19) 0px 10px 20px, rgba(246, 235, 235, 0.23) 0px 6px 6px;
     display: flex;
@@ -885,13 +880,7 @@ button{
 .header{
     display: none;
 }
-/* right Navigation image */
-.imgMain{
-    display: flex;
-    margin: 10px;
-  
 
-}
 /* CHARACTER DETAİL CSS*/
 
 
@@ -946,28 +935,14 @@ iframe{
     color: white ;
     box-shadow: rgba(158, 233, 6, 0.25) 0px 4px 10px, #440563 0px 0px 10px;
     border-width :4px; 
-    /* border-style: solid; 
-    border-image-source: url('./img/pngegg\ .png');
-    border-image-slice: 155; 
-    border-image-width: 20px;  */
     width: 100%;
     justify-content: center;
     align-items: center;
 
 }
-.imgAboutGame{
- background-color: none;
-  background-image: url(./img/at.png) !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-.accordionDesktop{
-    justify-content: center;
-    align-items: center;
-    width: 900px;
-}
+
+
 .accordion-item{
   width: 100% !important;
   justify-content: center;
@@ -1179,6 +1154,7 @@ iframe{
   justify-content: center;
   background-image:  url(./img/elf.img.png);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   color:  #66dd17;
   padding-top: 10px;
   font-size: 30px;
@@ -1193,9 +1169,6 @@ iframe{
 
 
  @media (max-width: 965px) {
-
-  
-
 
   .accordionMobile{
      display: block;
@@ -1298,6 +1271,7 @@ li{
    justify-content: center;
    background-image:  url(./img/elf.img.png);
    -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
    color:  #66dd17;
    padding-top: 10px;
    font-size: 30px;
