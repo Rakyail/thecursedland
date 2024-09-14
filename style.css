@@ -381,7 +381,6 @@ a{
 :root {
    --color1: rgb(0, 231, 255);
    --color2: rgb(98, 181, 46);
-   --back: url(./img/ork.webp);
    --charizard1: #fac;
    --charizard2: #ddccaa;
    --charizardfront: url(./img/elfBig.png);
@@ -402,17 +401,7 @@ a{
 
  
  
- .cardss.warriorİmge  .warriorArmor{
-  background-image: var(--warriorsfront);
-  background-image: var(--warriorArmorfront); /* Yeni görseli burada kullanıyoruz */
-  /* Yeni görseli burada kullanıyoruz */
 
-
-  width: 100px; /* İstediğiniz genişlik */
-  height: 100px; /* İstediğiniz yükseklik */
-  transition: transform 0.3s ease; /* Geçiş animasyonu */
-  cursor: pointer; /* İmleç değişikliği */
-}
 .cardss.warrior.enlarged {
     transform: scale(2); /* Görseli 2 kat büyütür */
     z-index: 1000; /* Görseli öne çıkartır */
@@ -422,12 +411,11 @@ a{
   height:30vh; 
   justify-content:  center; 
   align-items:center;
-   display:flexbox; 
+  display:flexbox; 
    
 }
  
  .cardss {
-  touch-action: auto;
   width: clamp(123px, 51vh, 8vw);
   height: clamp(250px, 65vh, 25.2vw);
 
@@ -438,11 +426,9 @@ a{
     max-width: 500px;
     max-height: 700px;
   }
-  touch-action: auto;
   position: relative;
   margin: 20px;
   z-index: 10;
-  touch-action: none;
 
   border-radius: 5% / 3.5%;
   box-shadow: 
@@ -721,6 +707,10 @@ th, td {
      var(--color5) 64%,
      transparent 80%
    );
+   .cardss {
+    overflow: auto; /* İçeriğin taşmasını sağlar ve kaydırma çubuğunu gösterir */
+  }
+  
  }
  
 
@@ -1330,6 +1320,6 @@ table, th, td {
    align-items: center;
  }
  body{
-  touch-action: auto;
+  touch-action:pan-y;
  }
  }
