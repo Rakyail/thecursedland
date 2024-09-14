@@ -1335,8 +1335,10 @@ table, th, td {
     margin: 0 7.5px;
   }
  .rowss{
-  width: 100%;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  
  }
 }
 @media (min-width: 469px) and (max-width: 645px) {
@@ -1349,6 +1351,8 @@ table, th, td {
     margin: 0 7.5px;
   }
  .rowss{
+  justify-content: center;
+  align-items: center;
   flex-direction:column;
  }
 
