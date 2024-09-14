@@ -437,7 +437,7 @@ a{
     max-width: 500px;
     max-height: 700px;
   }
-
+  touch-action: auto;
   position: relative;
   margin: 20px;
   z-index: 10;
