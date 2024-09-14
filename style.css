@@ -1,5 +1,6 @@
 body{
      background-color: rgb(12,10,20) !important;
+     box-sizing: border-box;
 }
 
 .navbar-expand{
@@ -1321,3 +1322,35 @@ table, th, td {
  }
 
  }
+
+
+ /* WARRİOR PAGE MOBILE CSS */
+ @media (max-width: 465px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row > div {
+    flex: 1 1 calc(50% - 15px);
+    margin: 0 7.5px;
+  }
+ .rowss{
+  width: 100%;
+  padding: 20px;
+ }
+}
+@media (min-width: 469px) and (max-width: 645px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row > div {
+    flex: 1 1 calc(50% - 15px);
+    margin: 0 7.5px;
+  }
+ .rowss{
+  flex-direction:column;
+ }
+
+}
+ /* WARRİOR PAGE MOBILE CSS END*/
