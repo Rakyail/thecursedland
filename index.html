@@ -103,7 +103,6 @@
                         <li><a href="./templates/items.html" class="navigationLi">İtems</a></li>
                         <li><a href="./templates/maps.html" class="navigationLi">Maps</a></li>
                         <li><a href="./templates/bonuses.html" class="navigationLi">Bonuses</a></li>
-
                         <li><a href="./templates/npc.html" class="navigationLi">Npc</a></li>
                         <li><a href="./templates/mobs.html" class="navigationLi">Mobs</a></li>
                         <li><a href="./templates/tokens.html" class="navigationLi">Tokens</a></li>
@@ -217,22 +216,24 @@
                   </div>
                   
                   <img src="img/GXClf0YW4AA3b2k.png" class="character" />
-                  <button class="button-13" role="button">
+                  
+                  <button class="button-13" role="button" onclick="window.location.href='templates/bonuses.html';">
                     <span class="text">Bonus</span>
                     <span class="button-13-background"></span>
                     <span class="button-13-border"></span>
-                  
+                
                     <!-- mask-border fallback -->
                     <svg style="position: absolute;" width="" height="0">
-                      <filter id="remove-black-button-13" color-interpolation-filters="sRGB">
-                        <feColorMatrix type="matrix" values="1 0 0 0 0
-                                  0 1 0 0 0
-                                  0 0 1 0 0
-                                  -1 -1 -1 0 1" result="black-pixels"></feColorMatrix>
-                        <feComposite in="SourceGraphic" in2="black-pixels" operator="out"></feComposite>
-                      </filter>
+                        <filter id="remove-black-button-13" color-interpolation-filters="sRGB">
+                            <feColorMatrix type="matrix" values="1 0 0 0 0
+                                      0 1 0 0 0
+                                      0 0 1 0 0
+                                      -1 -1 -1 0 1" result="black-pixels"></feColorMatrix>
+                            <feComposite in="SourceGraphic" in2="black-pixels" operator="out"></feComposite>
+                        </filter>
                     </svg>
-                  </button>
+                </button>
+                
                   
                   
                 </div>
