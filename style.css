@@ -427,6 +427,7 @@ a{
 }
  
  .cardss {
+  touch-action: auto;
   width: clamp(123px, 51vh, 8vw);
   height: clamp(250px, 65vh, 25.2vw);
 
