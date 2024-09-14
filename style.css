@@ -1319,7 +1319,5 @@ table, th, td {
    justify-content: center;
    align-items: center;
  }
- body{
-  touch-action:pan-y;
- }
+
  }
